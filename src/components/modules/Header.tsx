@@ -24,9 +24,9 @@ export default function Header() {
 
       <div
         className={clsx(
-          !open && "hidden",
+          !open && " sr-only translate-x-[500px] translate-y-0",
           open &&
-            "basic-container w-full h-screen absolute z-50 left-0 backdrop-blur-xl bg-[rgba(1, 10, 5, 0.75)] pt-11 "
+            "basic-container has-[body]:overflow-hidden w-full h-screen absolute z-50 left-0 backdrop-blur-xl bg-bgMobileMenu pt-11.5 translate-x-0 translate-y-0 transition-transform duration-300"
         )}
       >
         <HeaderButton open={open} setOpen={setOpen}>
@@ -37,7 +37,7 @@ export default function Header() {
             <li key={item.toLowerCase()}>
               <a
                 href={`#${item.toLowerCase()}`}
-                className="text-lg font-normal tracking-[0.1em]"
+                className="text-lg font-normal tracking-[0.1em] scroll-smooth"
               >
                 {item}
               </a>
@@ -48,9 +48,3 @@ export default function Header() {
     </>
   );
 }
-
-// font-family: var(--font-family);
-// font-weight: 400;
-// font-size: 14px;
-// letter-spacing: 0.1em;
-// color: #fff;

@@ -10,21 +10,19 @@ const config: Config = {
     extend: {
       backgroundImage: {
         heroMobile:
-          "linear-gradient(180deg, rgba(0, 24, 38, 0.5) 0%, rgba(0, 37, 49, 0.5) 100%), url('/img/hero-bg-mobile-1x.jpg')",
-
-        heroDesktop:
-          "linear-gradient(180deg, rgba(0, 24, 38, 0.5) 0%, rgba(0, 37, 49, 0.5) 100%), url('/img/hero-bg-1x.jpg')",
-      },
-      backdropBlur: {
-        xl: "50px",
+          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/hero-bg-mobile-1x.jpg')",
+        heroDesktop: "url('/img/hero-bg-1x.jpg')",
+        aboutMobile: "url('/img/about-bg-mobile-1x.jpg')",
       },
       spacing: {
-        11: "43px",
-        13: "53px",
+        10.5: "42px",
+        11.5: "46px",
+        13.2: "53px",
         26: "105px",
         27: "110px",
-        38: "157px",
-        68: "280px",
+        39: "157px",
+        45: "180px",
+        70: "280px",
       },
       fontFamily: {
         primary: "Inter",
@@ -33,6 +31,8 @@ const config: Config = {
       colors: {
         primary: "#fff",
         btn: "rgba(255, 255, 255, 0.1)",
+        bgPrimary: "rgba(2, 15, 8, 0.5)",
+        bgMobileMenu: "rgba(1, 10, 5, 0.75)",
       },
       letterSpacing: {
         "1": "-0.04em",

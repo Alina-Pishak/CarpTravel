@@ -10,6 +10,7 @@ type Props = {
 
 export default function HeaderButton({ children, open, setOpen }: Props) {
   const toggleMenu = () => {
+    document.body.classList.toggle("overflow-hidden");
     setOpen(!open);
   };
   return (
