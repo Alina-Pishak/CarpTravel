@@ -8,11 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: { xs: { max: "320px" } },
       backgroundImage: {
         heroMobile:
           "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/hero-bg-mobile-1x.jpg')",
-        heroDesktop: "url('/img/hero-bg-1x.jpg')",
-        aboutMobile: "url('/img/about-bg-mobile-1x.jpg')",
+        heroDesktop:
+          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/hero-bg-1x.jpg')",
+        aboutMobile:
+          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/about-bg-mobile-1x.jpg')",
+        aboutMobileSmall: "url('/img/about-bg-mobile-320px-1x.jpg')",
+        slider:
+          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/slider-bg-1-mobile-1x.jpg')",
+        careerMobile:
+          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/career-mobile-1x.jpg')",
       },
       spacing: {
         10.5: "42px",
@@ -44,6 +52,7 @@ const config: Config = {
       fontSize: {
         xxs: ["10px", "1.6"],
         l: ["40px", "1.4"],
+        "5xl": "43px",
       },
     },
   },

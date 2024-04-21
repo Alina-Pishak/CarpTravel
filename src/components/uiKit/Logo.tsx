@@ -28,9 +28,3 @@ export default function Logo() {
     </Link>
   );
 }
-
-// font-family: var(--second-family);
-// font-weight: 400;
-// font-size: 14px;
-// letter-spacing: 0.18em;
-// color: #fff;

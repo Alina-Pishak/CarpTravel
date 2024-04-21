@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import clsx from "clsx";
+import { Link } from "react-scroll";
 
 import menu from "@/data/menu.json";
 
@@ -24,7 +25,7 @@ export default function Header() {
 
       <div
         className={clsx(
-          !open && " sr-only translate-x-[500px] translate-y-0",
+          !open && "sr-only translate-x-[500px] translate-y-0",
           open &&
             "basic-container has-[body]:overflow-hidden w-full h-screen absolute z-50 left-0 backdrop-blur-xl bg-bgMobileMenu pt-11.5 translate-x-0 translate-y-0 transition-transform duration-300"
         )}
@@ -35,12 +36,16 @@ export default function Header() {
         <ul className="mt-27 flex flex-col gap-12 items-center">
           {menu.map((item) => (
             <li key={item.toLowerCase()}>
-              <a
-                href={`#${item.toLowerCase()}`}
+              <Link
+                to={item.toLowerCase()}
+                spy={true}
+                smooth={true}
+                duration={500}
                 className="text-lg font-normal tracking-[0.1em] scroll-smooth"
+                onClick={() => setOpen(false)}
               >
                 {item}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
