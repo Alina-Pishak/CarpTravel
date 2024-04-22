@@ -39,8 +39,12 @@ const config: Config = {
       colors: {
         primary: "#fff",
         btn: "rgba(255, 255, 255, 0.1)",
+        error: "#ff5757",
         bgPrimary: "rgba(2, 15, 8, 0.5)",
         bgMobileMenu: "rgba(1, 10, 5, 0.75)",
+        bgInputs: "rgba(255, 255, 255, 0.05);",
+        bgHoverInputs: "rgba(255, 255, 255, 0.1);",
+        bgHeaderBtnHover: "rgba(255, 255, 255, 0.2);",
       },
       letterSpacing: {
         "1": "-0.04em",

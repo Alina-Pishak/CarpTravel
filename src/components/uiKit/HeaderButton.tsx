@@ -1,7 +1,5 @@
 "use client";
 
-import clsx from "clsx";
-
 type Props = {
   children: string;
   open: boolean;

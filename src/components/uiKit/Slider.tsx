@@ -30,7 +30,7 @@ export default function Slider({ data }: Props) {
     >
       {data.map(
         ({ number, action, image, background, text, titles }, index) => (
-          <SwiperSlide key={number}>
+          <SwiperSlide key={index}>
             <h5 className="font-thin text-5xl text-right mb-4">
               {number.padStart(2, "0")} /{" "}
               <span className="opacity-20">
@@ -44,7 +44,7 @@ export default function Slider({ data }: Props) {
               height={213}
               className="mb-3"
             />
-            <p className="text-right ml-auto mb-6 text-xs leading-[200%] tracking-[0.2em] font-extralight">
+            <p className="text-right ml-auto mb-6 text-xs leading-[2] tracking-[0.2em] font-extralight">
               {action}
             </p>
             <ul className="mb-13.2">

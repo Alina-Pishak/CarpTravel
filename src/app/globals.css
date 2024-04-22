@@ -104,6 +104,12 @@ button {
   border-spacing: 0;
 }
 
+input:focus,
+textarea:focus {
+  border-color: none;
+  outline: none;
+}
+
 .basic-container {
   max-width: 440px;
   padding-left: 20px;

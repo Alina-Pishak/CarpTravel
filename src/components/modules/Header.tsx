@@ -34,15 +34,18 @@ export default function Header() {
           Close
         </HeaderButton>
         <ul className="mt-27 flex flex-col gap-12 items-center">
-          {menu.map((item) => (
-            <li key={item.toLowerCase()}>
+          {menu.map((item, index) => (
+            <li key={index}>
               <Link
                 to={item.toLowerCase()}
                 spy={true}
                 smooth={true}
                 duration={500}
                 className="text-lg font-normal tracking-[0.1em] scroll-smooth"
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  document.body.classList.remove("overflow-hidden");
+                  setOpen(false);
+                }}
               >
                 {item}
               </Link>
