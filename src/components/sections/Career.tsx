@@ -1,16 +1,20 @@
+"use client";
+
 import BgContainer from "@/components/uiKit/BgContainer";
 import Text from "@/components/uiKit/Text";
 import Title from "@/components/uiKit/Title";
-import RegistrationForm from "../uiKit/RegistrationForm";
+import Form from "@/components/uiKit/Form";
+
+import { registrationSchema } from "@/helpers/schemas";
 
 import career from "@/data/career.json";
 
 export default function Career() {
-  const { title, text, subtitle, callText, careers, RegistrationFormProps } =
+  const { title, text, subtitle, callText, careers, registrationFormProps } =
     career;
   return (
     <section id="career">
-      <div className="bg-careerMobile bg-cover bg-center">
+      <div className="career-bg">
         <BgContainer>
           <Title extraProps="mb-6">{title}</Title>
           <div className="ml-auto w-45 mb-9">
@@ -31,10 +35,10 @@ export default function Career() {
           </ul>
         </BgContainer>
       </div>
-      <div className="bg-careerMobile bg-cover bg-center">
+      <div className="career-bg">
         <BgContainer>
           <Text extraProps="w-45 ml-auto mb-6">{callText}</Text>
-          <RegistrationForm registrationFormProps={RegistrationFormProps} />
+          <Form formProps={registrationFormProps} schema={registrationSchema} />
         </BgContainer>
       </div>
     </section>

@@ -21,7 +21,7 @@
       "careerText": "Unleash your potential through unforgettable projects showcasing Carpathian beauty."
     }
   ],
-  "RegistrationFormProps": {
+  "registrationFormProps": {
     "props": [
       { "label": "Full name", "placeholder": "John Smith", "name": "fullName" },
       {

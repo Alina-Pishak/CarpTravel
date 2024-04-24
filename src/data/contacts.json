@@ -1,0 +1,51 @@
+{
+  "title": "contact us",
+  "contactsInfo": [
+    {
+      "title": "Phone number",
+      "text": [
+        { "name": "+38 (098) 12 34 567", "link": "" },
+        { "name": "+38 (073) 12 34 567", "link": "" }
+      ]
+    },
+    {
+      "title": "E-mail",
+      "text": [{ "name": "support@carptravel.com", "link": "" }]
+    },
+    {
+      "title": "Follow us",
+      "text": [
+        { "name": "facebook", "link": "" },
+        { "name": "instagram", "link": "" },
+        { "name": "youtube", "link": "" },
+        { "name": "tiktok", "link": "" }
+      ]
+    }
+  ],
+  "phonesInfo": {
+    "title": "Phone number",
+    "phones": ["+38 (098) 12 34 567", "+38 (073) 12 34 567"]
+  },
+  "emailInfo": { "title": "E-mail", "email": "support@carptravel.com" },
+  "socialMediaInfo": {
+    "title": "Follow us",
+    "socialMedia": [
+      { "name": "facebook", "link": "" },
+      { "name": "instagram", "link": "" },
+      { "name": "youtube", "link": "" },
+      { "name": "tiktok", "link": "" }
+    ]
+  },
+  "contactFormProps": {
+    "props": [
+      { "label": "Full name", "placeholder": "John Smith", "name": "fullName" },
+      {
+        "label": "E-mail",
+        "placeholder": "johnsmith@email.com",
+        "name": "email"
+      },
+      { "label": "Message", "placeholder": "", "name": "message" }
+    ],
+    "buttonText": "send"
+  }
+}

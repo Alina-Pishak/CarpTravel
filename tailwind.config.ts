@@ -8,27 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      screens: { xs: { max: "320px" } },
-      backgroundImage: {
-        heroMobile:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/hero-bg-mobile-1x.jpg')",
-        heroDesktop:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/hero-bg-1x.jpg')",
-        aboutMobile:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/about-bg-mobile-1x.jpg')",
-        aboutMobileSmall: "url('/img/about-bg-mobile-320px-1x.jpg')",
-        slider:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/slider-bg-1-mobile-1x.jpg')",
-        careerMobile:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/career-mobile-1x.jpg')",
-      },
       spacing: {
-        10.5: "42px",
-        11.5: "46px",
-        13.2: "53px",
-        26: "105px",
-        27: "110px",
-        39: "157px",
         45: "180px",
         70: "280px",
       },
@@ -48,15 +28,15 @@ const config: Config = {
       },
       letterSpacing: {
         "1": "-0.04em",
-        "2": "0.18em",
-        // "2": "0.025em",
-        // "3": "0.05em",
-        // "4": "0.1em",
+        "2": "0.2em",
       },
       fontSize: {
         xxs: ["10px", "1.6"],
         l: ["40px", "1.4"],
         "5xl": "43px",
+      },
+      boxShadow: {
+        image: "0 0 15px 0 rgba(0, 0, 0, 0.5)",
       },
     },
   },

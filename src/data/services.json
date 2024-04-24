@@ -5,7 +5,7 @@
       "number": "1",
       "action": "Feel the adrenaline rush",
       "image": "/img/slider-1-mobile-1x.jpg",
-      "background": "/img/slider-bg-1-mobile-1x.jpg",
+      "background": "services-1-bg",
       "text": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
       "titles": [
         "ATVs Traveling",
@@ -19,7 +19,7 @@
       "number": "2",
       "action": "Destroy your limitations",
       "image": "/img/slider-2-mobile-1x.jpg",
-      "background": "/img/slider-bg-2-mobile-1x.jpg",
+      "background": "services-2-bg",
       "text": "Overcome the peaks of the Carpathians in a unique way - climbing. Make your own way to the heights and find inner peace in the embrace of the mighty rocks.",
       "titles": [
         "ATVs Traveling",
@@ -33,7 +33,7 @@
       "number": "3",
       "action": "Get Inspired",
       "image": "/img/slider-3-mobile-1x.jpg",
-      "background": "/img/slider-bg-3-mobile-1x.jpg",
+      "background": "services-3-bg",
       "text": "Feel Zen over the mountain peaks! Hot air ballooning gives you incredible impressions and panoramas of the Carpathians that seem endless.",
       "titles": [
         "ATVs Traveling",
@@ -47,7 +47,7 @@
       "number": "4",
       "action": "Overcome your fears",
       "image": "/img/slider-4-mobile-1x.jpg",
-      "background": "/img/slider-bg-4-mobile-1x.jpg",
+      "background": "services-4-bg",
       "text": "Fly in the sky over the Carpathians! Experienced instructors will help you realize your dream of free flight. Remember the incredible emotions and panoramas from a bird's eye view forever.",
       "titles": [
         "ATVs Traveling",
@@ -61,7 +61,7 @@
       "number": "5",
       "action": "Trust the flow",
       "image": "/img/slider-5-mobile-1x.jpg",
-      "background": "/img/slider-bg-5-mobile-1x.jpg",
+      "background": "services-5-bg",
       "text": "Join exciting rafting expeditions on the waterways of the Carpathians. Go through challenging waterways and overcome gusty waves, feel the adrenaline, and enjoy the incredible views of the surrounding mountains.",
       "titles": [
         "ATVs Traveling",

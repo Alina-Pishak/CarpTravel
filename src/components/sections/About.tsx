@@ -1,13 +1,13 @@
-import about from "@/data/about.json";
-
 import Title from "@/components/uiKit/Title";
 import Text from "@/components/uiKit/Text";
 import BgContainer from "@/components/uiKit/BgContainer";
 
+import about from "@/data/about.json";
+
 export default function About() {
   const { title, description, goal, subtitle, opportunity, methods } = about;
   return (
-    <section id="about" className="bg-aboutMobile xs:bg-aboutMobileSmall">
+    <section id="about" className="about-bg">
       <BgContainer>
         <Title extraProps="mb-2">{title}</Title>
         <Text extraProps="mb-5" wordCount={4}>

@@ -21,7 +21,7 @@ export default function Logo() {
             height={22}
           />
         </div>
-        <p className="font-secondary text-sm tracking-2 font-normal">
+        <p className="font-secondary text-sm tracking-[0.18em] font-normal">
           CarpTravel
         </p>
       </div>

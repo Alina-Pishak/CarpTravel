@@ -1,3 +1,5 @@
+import HeroButton from "@/components/uiKit/HeroButton";
+
 import {
   opportunityTitle,
   opportunitySubTitle,
@@ -6,12 +8,11 @@ import {
   text,
   buttonText,
 } from "@/data/hero.json";
-import HeroButton from "@/components/uiKit/HeroButton";
 
 export default function Hero() {
   return (
-    <section id="hero" className="bg-heroMobile bg-cover  ">
-      <div className="basic-container pt-26 pb-14 bg-bgPrimary">
+    <section id="hero" className="hero-bg ">
+      <div className="basic-container pt-[105px] pb-14 bg-bgPrimary">
         <h2 className="first-letter:font-medium font-thin text-4xl tracking-[0.04em] text-right">
           {opportunityTitle}
         </h2>
@@ -26,7 +27,7 @@ export default function Hero() {
             .slice(1, title.length - 1)
             .join(" ")}
         </h1>
-        <p className="text-xxs font-extralight w-39 mb-6">{cities}</p>
+        <p className="text-xxs font-extralight w-[157px] mb-6">{cities}</p>
         <p className=" font-light text-sm text-justify mb-6">{text}</p>
         <HeroButton>{buttonText}</HeroButton>
       </div>
