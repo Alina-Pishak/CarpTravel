@@ -5,5 +5,9 @@ type Props = {
 };
 
 export default function BgContainer({ children }: Props) {
-  return <div className="basic-container py-14 bg-bgPrimary">{children}</div>;
+  return (
+    <div className="basic-container py-14 bg-bgPrimary sm:py-16">
+      {children}
+    </div>
+  );
 }

@@ -50,7 +50,7 @@ export default function Form({ formProps, schema }: Props) {
           <label
             htmlFor={name}
             className={clsx(
-              "text-xs leading-[2] tracking-2 font-extralight mb-1 block ",
+              "text-xs leading-8 tracking-2 font-extralight mb-1 block ",
               errors[name] && "text-error"
             )}
           >
@@ -82,7 +82,7 @@ export default function Form({ formProps, schema }: Props) {
                   <svg width={18} height={18} className="stroke-error">
                     <use href="/img/symbol-defs.svg#icon-cross"></use>
                   </svg>
-                  <p className="font-extralight text-xs leading-[2] tracking-2 text-error">
+                  <p className="font-extralight text-xs leading-8 tracking-2 text-error">
                     Incorrect {name}
                   </p>
                 </>

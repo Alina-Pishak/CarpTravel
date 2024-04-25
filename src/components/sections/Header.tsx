@@ -15,9 +15,26 @@ export default function Header() {
 
   return (
     <>
-      <header className="basic-container pt-9  w-full  absolute left-0 ">
-        <div className="flex justify-between items-center">
-          <Logo />
+      <header className="basic-container pt-9  w-full  absolute left-0 sm:pt-6">
+        <div className="flex justify-between items-center sm:block">
+          <nav className="sm:flex sm:justify-between sm:items-center">
+            <Logo />
+            <ul className="hidden sm:flex sm:gap-6">
+              {menu.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    to={item.toLowerCase()}
+                    spy={true}
+                    smooth={true}
+                    duration={700}
+                    className="text-xs font-normal tracking-[0.1em] "
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
           <HeaderButton open={open} setOpen={setOpen}>
             Menu
           </HeaderButton>
@@ -41,8 +58,8 @@ export default function Header() {
                 to={item.toLowerCase()}
                 spy={true}
                 smooth={true}
-                duration={500}
-                className="text-lg font-normal tracking-[0.1em] scroll-smooth"
+                duration={700}
+                className="text-lg font-normal tracking-[0.1em] "
                 onClick={() => {
                   document.body.classList.remove("overflow-hidden");
                   setOpen(false);

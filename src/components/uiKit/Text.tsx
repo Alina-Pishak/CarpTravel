@@ -15,6 +15,10 @@ export default function Text({ children, extraProps, wordCount }: Props) {
       {chooseSomeWords(children, wordCount, children.length - 1)}
     </p>
   ) : (
-    <p className={`font-extralight text-sm w-45 ${extraProps}`}>{children}</p>
+    <p
+      className={`font-extralight text-sm w-45  sm:text-sm leading-[1.2] ${extraProps}`}
+    >
+      {children}
+    </p>
   );
 }

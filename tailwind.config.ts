@@ -10,15 +10,17 @@ const config: Config = {
     extend: {
       spacing: {
         45: "180px",
+        50: "220px",
         70: "280px",
       },
       fontFamily: {
-        primary: "Inter",
-        secondary: "Karantina",
+        primary: ["var(--font-inter)"],
+        secondary: ["var(--font-karantina)"],
       },
       colors: {
         primary: "#fff",
         btn: "rgba(255, 255, 255, 0.1)",
+        btnTablet: " rgba(255, 255, 255, 0.05)",
         error: "#ff5757",
         bgPrimary: "rgba(2, 15, 8, 0.5)",
         bgMobileMenu: "rgba(1, 10, 5, 0.75)",
@@ -34,6 +36,7 @@ const config: Config = {
         xxs: ["10px", "1.6"],
         l: ["40px", "1.4"],
         "5xl": "43px",
+        "6xl": ["67px", "1"],
       },
       boxShadow: {
         image: "0 0 15px 0 rgba(0, 0, 0, 0.5)",

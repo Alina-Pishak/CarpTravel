@@ -2,72 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: "Inter";
-    font-weight: 100;
-    src: local("Inter"),
-      url("/fonts/Inter/Inter-ThinBETA.eot") format("embedded-opentype"),
-      url("/fonts/Inter/Inter-ThinBETA.ttf") format("truetype"),
-      url("/fonts/Inter/Inter-ThinBETA.woff") format("woff"),
-      url("/fonts/Inter/Inter-ThinBETA.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Inter";
-    font-weight: 200;
-    src: local("Inter"),
-      url("/fonts/Inter/Inter-ExtraLightBETA.eot") format("embedded-opentype"),
-      url("/fonts/Inter/Inter-ExtraLightBETA.ttf") format("truetype"),
-      url("/fonts/Inter/Inter-ExtraLightBETA.woff") format("woff"),
-      url("/fonts/Inter/Inter-ExtraLightBETA.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Inter";
-    font-weight: 300;
-    src: local("Inter"),
-      url("/fonts/Inter/Inter-LightBETA.eot") format("embedded-opentype"),
-      url("/fonts/Inter/Inter-LightBETA.ttf") format("truetype"),
-      url("/fonts/Inter/Inter-LightBETA.woff") format("woff"),
-      url("/fonts/Inter/Inter-LightBETA.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Inter";
-    font-weight: 400;
-    src: local("Inter"),
-      url("/fonts/Inter/Inter-Regular.eot") format("embedded-opentype"),
-      url("/fonts/Inter/Inter-Regular.ttf") format("truetype"),
-      url("/fonts/Inter/Inter-Regular.woff") format("woff"),
-      url("/fonts/Inter/Inter-Regular.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Inter";
-    font-weight: 500;
-    src: local("Inter"),
-      url("/fonts/Inter/Inter-Medium.eot") format("embedded-opentype"),
-      url("/fonts/Inter/Inter-Medium.ttf") format("truetype"),
-      url("/fonts/Inter/Inter-Medium.woff") format("woff"),
-      url("/fonts/Inter/Inter-Medium.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Inter";
-    font-weight: 700;
-    src: local("Inter"),
-      url("/fonts/Inter/Inter-Bold.eot") format("embedded-opentype"),
-      url("/fonts/Inter/Inter-Bold.ttf") format("truetype"),
-      url("/fonts/Inter/Inter-Bold.woff") format("woff"),
-      url("/fonts/Inter/Inter-Bold.woff2") format("woff2");
-  }
-  @font-face {
-    font-family: "Karantina";
-    font-weight: 400;
-    src: local("Karantina"),
-      url("/fonts/Karantina/Karantina-Regular.eot") format("embedded-opentype"),
-      url("/fonts/Karantina/Karantina-Regular.ttf") format("truetype"),
-      url("/fonts/Karantina/Karantina-Regular.woff") format("woff"),
-      url("/fonts/Karantina/Karantina-Regular.woff2") format("woff2");
-  }
-}
-
 *,
 ::before,
 ::after {
@@ -111,7 +45,7 @@ textarea:focus {
 }
 
 .basic-container {
-  max-width: 440px;
+  /* max-width: 440px; */
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -136,7 +70,7 @@ textarea:focus {
 
 @media screen and (min-width: 768px) {
   .basic-container {
-    max-width: 745px;
+    /* max-width: 745px; */
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -144,7 +78,7 @@ textarea:focus {
 
 @media screen and (min-width: 1280px) {
   .basic-container {
-    min-width: 1250px;
+    /* min-width: 1250px; */
     padding-left: 80px;
     padding-right: 80px;
   }
