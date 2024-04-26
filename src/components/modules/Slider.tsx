@@ -66,7 +66,7 @@ export default function Slider({ title, data }: Props) {
                   className="mb-3 w-[463px]"
                 />
                 <div className="hidden sm:block">
-                  <p className="text-right ml-auto mb-6 text-xs leading-8 tracking-2 font-extralight sm:hidden">
+                  <p className="text-right ml-auto mb-6 text-xs leading-loose tracking-2 font-extralight sm:hidden">
                     {action}
                   </p>
                   <ul className="mb-[53px] sm:mb-[25px]">
@@ -85,7 +85,7 @@ export default function Slider({ title, data }: Props) {
                       </li>
                     ))}
                   </ul>
-                  <p className=" hidden sm:block sm:text-xs sm:leading-8 sm:tracking-2 sm:font-extralight sm:mb-[34px]">
+                  <p className=" hidden sm:block sm:text-xs sm:leading-loose sm:tracking-2 sm:font-extralight sm:mb-[34px]">
                     {action}
                   </p>
                   <Text extraProps="w-70 sm:w-55">{text}</Text>

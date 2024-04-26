@@ -44,18 +44,26 @@ export default function Form({ formProps, schema }: Props) {
     }
   };
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="career-layout gap-x-5	items-start	"
+    >
       {props.map(({ label, placeholder, name }, index) => (
-        <React.Fragment key={index}>
+        <div
+          key={index}
+          className={`[grid-area:field${index}]`}
+          style={{ gridArea: `field${index}` }}
+        >
           <label
             htmlFor={name}
             className={clsx(
-              "text-xs leading-8 tracking-2 font-extralight mb-1 block ",
+              "text-xs leading-loose tracking-2 font-extralight mb-1 block ",
               errors[name] && "text-error"
             )}
           >
             {label}
           </label>
+
           {name !== "message" ? (
             <input
               id={name}
@@ -63,7 +71,7 @@ export default function Form({ formProps, schema }: Props) {
               autoComplete="off"
               {...register(name)}
               className={clsx(
-                " font-extralight text-[13px] leading-[1.8] px-2 w-full bg-bgInputs placeholder:opacity-20 transition-colors hover:bg-bgHoverInputs focus:bg-bgHoverInputs",
+                " font-extralight text-[13px] leading-[1.85] px-2 w-full bg-bgInputs placeholder:opacity-20 transition-colors hover:bg-bgHoverInputs focus:bg-bgHoverInputs",
                 name === "message" && "h-[196px]",
                 errors[name] && "text-error opacity-100"
               )}
@@ -82,14 +90,14 @@ export default function Form({ formProps, schema }: Props) {
                   <svg width={18} height={18} className="stroke-error">
                     <use href="/img/symbol-defs.svg#icon-cross"></use>
                   </svg>
-                  <p className="font-extralight text-xs leading-8 tracking-2 text-error">
+                  <p className="font-extralight text-xs leading-loose tracking-2 text-error">
                     Incorrect {name}
                   </p>
                 </>
               )}
             </div>
           )}
-        </React.Fragment>
+        </div>
       ))}
       {formProps.confirmText && (
         <div className="flex gap-2 relative mb-4">
