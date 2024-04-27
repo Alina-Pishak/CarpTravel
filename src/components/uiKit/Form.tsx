@@ -51,8 +51,8 @@ export default function Form({ formProps, schema }: Props) {
       {props.map(({ label, placeholder, name }, index) => (
         <div
           key={index}
-          className={`[grid-area:field${index}]`}
-          style={{ gridArea: `field${index}` }}
+          // className={`[grid-area:field${index}]`}
+          style={{ gridArea: `${name}` }}
         >
           <label
             htmlFor={name}
@@ -116,6 +116,7 @@ export default function Form({ formProps, schema }: Props) {
       <button
         type="submit"
         className="bg-none font-medium text-3xl text-inherit uppercase block ml-auto"
+        style={{ gridArea: "button" }}
       >
         {buttonText}
       </button>

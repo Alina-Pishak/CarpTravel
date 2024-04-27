@@ -14,19 +14,22 @@ export default function Contacts() {
     <section id="contacts" className="contacts-bg ">
       <BgContainer>
         <Title extraProps="mb-9">{title}</Title>
-        <ul>
+        <ul className="contacts-layout justify-items-center	">
           {contactsInfo.map(({ title, text }, index) => (
             <li
               key={index}
               className="flex gap-5 mb-6 justify-start flex-row-reverse items-baseline	 last:flex-row last:justify-end last:mb-2"
+              style={{ gridArea: `item${index}` }}
             >
-              <p className="font-extralight text-xs leading-[1.6]">{title}</p>
+              <p className="font-extralight text-xs leading-[1.67]  sm:w-20">
+                {title}
+              </p>
               <ul>
                 {text.map(({ name, link }, index) => (
                   <li key={index}>
                     <a
                       href={link}
-                      className="font-normal leading-[1.7] text-sm"
+                      className="font-normal leading-[1.7] text-sm sm:text-base sm:text-right sm:leading-[1.5]"
                     >
                       {name}
                     </a>

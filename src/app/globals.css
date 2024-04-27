@@ -26,6 +26,7 @@ img {
   display: block;
   line-height: 0;
   height: auto;
+  width: 100%;
 }
 
 a {
@@ -70,7 +71,7 @@ textarea:focus {
 
 @media screen and (min-width: 768px) {
   .basic-container {
-    /* max-width: 745px; */
+    /* max-width: 768px; */
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -78,7 +79,7 @@ textarea:focus {
 
 @media screen and (min-width: 1280px) {
   .basic-container {
-    /* min-width: 1250px; */
+    min-width: 1250px;
     padding-left: 80px;
     padding-right: 80px;
   }
