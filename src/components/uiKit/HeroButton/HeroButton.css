@@ -1,0 +1,45 @@
+.hero-button::after {
+  content: url("/img/right-btn-frame-mobile-icon.svg");
+  height: 53px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero-button::before {
+  content: url("/img/left-btn-frame-mobile-icon.svg");
+  height: 53px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-button::after {
+    content: url("/img/right-btn-frame-tablet-icon.svg");
+    height: 50px;
+    width: 35px;
+  }
+
+  .hero-button::before {
+    content: url("/img/left-btn-frame-tablet-icon.svg");
+    height: 50px;
+    width: 35px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-button::after {
+    content: url("/img/right-btn-frame-desktop-icon.svg");
+    height: 71px;
+    width: 44px;
+  }
+
+  .hero-button::before {
+    content: url("/img/left-btn-frame-desktop-icon.svg");
+    height: 71px;
+    width: 44px;
+  }
+}

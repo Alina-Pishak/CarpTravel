@@ -15,11 +15,11 @@ export default function Header() {
 
   return (
     <>
-      <header className="basic-container pt-9  w-full  absolute left-0 sm:pt-6">
-        <div className="flex justify-between items-center sm:block">
-          <nav className="sm:flex sm:justify-between sm:items-center">
+      <header className="basic-container pt-9  w-full  absolute left-0 md:pt-6">
+        <div className="flex justify-between items-center md:block">
+          <nav className="md:flex md:justify-between md:items-center">
             <Logo />
-            <ul className="hidden sm:flex sm:gap-6">
+            <ul className="hidden md:flex md:gap-6 xl:gap-14">
               {menu.map((item, index) => (
                 <li key={index}>
                   <Link

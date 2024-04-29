@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Karantina } from "next/font/google";
 
 import "./globals.css";
-import "./style.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",

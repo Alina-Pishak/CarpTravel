@@ -1,0 +1,71 @@
+.custom-checkbox::after {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.not-checked::after {
+  content: url("/img/checkbox.svg");
+}
+
+.not-checked:hover::after {
+  content: url("/img/checkbox-checked.svg");
+}
+
+.checked::after {
+  content: url("/img/checkbox-checked.svg");
+}
+
+@media screen and (min-width: 768px) {
+  .form-layout {
+    display: grid;
+    grid-template-columns: 222px auto;
+    grid-template-areas:
+      "fullName message"
+      "email message"
+      "position message"
+      "phone message"
+      ". button";
+  }
+
+  .form-fullName {
+    grid-area: fullName;
+  }
+
+  .form-email {
+    grid-area: email;
+  }
+
+  .form-position {
+    grid-area: position;
+  }
+
+  .form-phone {
+    grid-area: phone;
+  }
+
+  .form-message {
+    grid-area: message;
+  }
+
+  .form-button {
+    grid-area: button;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .form-layout {
+    grid-template-columns: 290px auto;
+  }
+
+  .form-layout-simple {
+    display: grid;
+    grid-template-columns: 293px 293px;
+    grid-template-areas:
+      "fullName email"
+      "message message"
+      ". button";
+  }
+}

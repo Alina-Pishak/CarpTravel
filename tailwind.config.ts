@@ -37,6 +37,7 @@ const config: Config = {
         l: ["40px", "1.4"],
         "5xl": "43px",
         "6xl": ["67px", "1"],
+        "8xl": ["98px", "1"],
       },
       boxShadow: {
         image: "0 0 15px 0 rgba(0, 0, 0, 0.5)",

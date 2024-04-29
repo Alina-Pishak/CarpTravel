@@ -1,0 +1,335 @@
+.services-1-bg {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 24, 38, 0.4) 0%,
+      rgba(0, 37, 49, 0.4) 100%
+    ),
+    url("/img/slider-bg-1-mobile-1x.jpg");
+  background-position: center;
+}
+
+.services-2-bg {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 24, 38, 0.4) 0%,
+      rgba(0, 37, 49, 0.4) 100%
+    ),
+    url("/img/slider-bg-2-mobile-1x.jpg");
+  background-position: center;
+}
+
+.services-3-bg {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 24, 38, 0.4) 0%,
+      rgba(0, 37, 49, 0.4) 100%
+    ),
+    url("/img/slider-bg-3-mobile-1x.jpg");
+  background-position: center;
+}
+
+.services-4-bg {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 24, 38, 0.4) 0%,
+      rgba(0, 37, 49, 0.4) 100%
+    ),
+    url("/img/slider-bg-4-mobile-1x.jpg");
+  background-position: center;
+}
+
+.services-5-bg {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 24, 38, 0.4) 0%,
+      rgba(0, 37, 49, 0.4) 100%
+    ),
+    url("/img/slider-bg-5-mobile-1x.jpg");
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .services-1-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-1-mobile-2x.jpg");
+  }
+
+  .services-2-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-2-mobile-2x.jpg");
+  }
+
+  .services-3-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-3-mobile-2x.jpg");
+  }
+
+  .services-4-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-4-mobile-2x.jpg");
+  }
+
+  .services-5-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-5-mobile-2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services-1-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-1-tablet-1x.jpg");
+  }
+
+  .services-2-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-2-tablet-1x.jpg");
+  }
+
+  .services-3-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-3-tablet-1x.jpg");
+  }
+
+  .services-4-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-4-tablet-1x.jpg");
+  }
+
+  .services-5-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-5-tablet-1x.jpg");
+  }
+
+  .services-layout {
+    display: grid;
+    grid-template-areas:
+      "title subtitle"
+      "image list"
+      "image action"
+      "image text";
+    grid-template-columns: 463px 221px;
+    column-gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .services-title {
+    grid-area: title;
+  }
+
+  .services-subtitle {
+    grid-area: subtitle;
+  }
+
+  .services-image {
+    grid-area: image;
+  }
+
+  .services-list {
+    grid-area: list;
+  }
+
+  .services-action {
+    grid-area: action;
+  }
+
+  .services-text {
+    grid-area: text;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .services-1-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.4) 0%,
+          rgba(0, 37, 49, 0.4) 100%
+        ),
+        url("/img/slider-bg-1-tablet-2x.jpg");
+    }
+
+    .services-2-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.4) 0%,
+          rgba(0, 37, 49, 0.4) 100%
+        ),
+        url("/img/slider-bg-2-tablet-2x.jpg");
+    }
+
+    .services-3-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.4) 0%,
+          rgba(0, 37, 49, 0.4) 100%
+        ),
+        url("/img/slider-bg-3-tablet-2x.jpg");
+    }
+
+    .services-4-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.4) 0%,
+          rgba(0, 37, 49, 0.4) 100%
+        ),
+        url("/img/slider-bg-4-tablet-2x.jpg");
+    }
+
+    .services-5-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.4) 0%,
+          rgba(0, 37, 49, 0.4) 100%
+        ),
+        url("/img/slider-bg-5-tablet-2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .services-1-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-1-desktop-1x.jpg");
+  }
+
+  .services-2-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-2-desktop-1x.jpg");
+  }
+
+  .services-3-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-3-desktop-1x.jpg");
+  }
+
+  .services-4-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-4-desktop-1x.jpg");
+  }
+
+  .services-5-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.4) 0%,
+        rgba(0, 37, 49, 0.4) 100%
+      ),
+      url("/img/slider-bg-5-desktop-1x.jpg");
+  }
+
+  .services-layout {
+    grid-template-areas:
+      "title subtitle ."
+      "image list action"
+      "image . text ";
+    grid-template-columns: 607px auto 293px;
+    column-gap: 20px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .services-1-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.4) 0%,
+          rgba(0, 37, 49, 0.4) 100%
+        ),
+        url("/img/slider-bg-1-desktop-2x.jpg");
+    }
+
+    .services-2-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.4) 0%,
+          rgba(0, 37, 49, 0.4) 100%
+        ),
+        url("/img/slider-bg-2-desktop-2x.jpg");
+    }
+
+    .services-3-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.4) 0%,
+          rgba(0, 37, 49, 0.4) 100%
+        ),
+        url("/img/slider-bg-3-desktop-2x.jpg");
+    }
+
+    .services-4-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.4) 0%,
+          rgba(0, 37, 49, 0.4) 100%
+        ),
+        url("/img/slider-bg-4-desktop-2x.jpg");
+    }
+
+    .services-5-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.4) 0%,
+          rgba(0, 37, 49, 0.4) 100%
+        ),
+        url("/img/slider-bg-5-desktop-2x.jpg");
+    }
+  }
+}

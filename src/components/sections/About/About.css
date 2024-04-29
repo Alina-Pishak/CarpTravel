@@ -1,0 +1,134 @@
+.about-bg {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 24, 38, 0.7) 0%,
+      rgba(0, 37, 49, 0.1) 50%
+    ),
+    url("/img/about-bg-mobile-1x.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 320px) {
+  .about-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.7) 0%,
+        rgba(0, 37, 49, 0.1) 50%
+      ),
+      url("/img/about-bg-mobile-1x.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.7) 0%,
+        rgba(0, 37, 49, 0.1) 50%
+      ),
+      url("/img/about-bg-mobile-2x.jpg");
+  }
+
+  @media screen and (max-width: 320px) {
+    .about-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.7) 0%,
+          rgba(0, 37, 49, 0.1) 50%
+        ),
+        url("/img/about-bg-mobile-2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.7) 0%,
+        rgba(0, 37, 49, 0.1) 50%
+      ),
+      url("/img/about-bg-tablet-1x.jpg");
+  }
+
+  .about-layout {
+    display: grid;
+    grid-template-areas:
+      "title description"
+      "subtitle goal"
+      "methods methods";
+    grid-template-columns: 408px auto;
+    column-gap: 76px;
+    justify-content: space-evenly;
+  }
+
+  .about-title {
+    grid-area: title;
+  }
+
+  .about-description {
+    grid-area: description;
+  }
+
+  .about-subtitle {
+    grid-area: subtitle;
+  }
+
+  .about-goal {
+    grid-area: goal;
+  }
+
+  .about-methods {
+    grid-area: methods;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.7) 0%,
+          rgba(0, 37, 49, 0.1) 50%
+        ),
+        url("/img/about-bg-tablet-2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-bg {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 24, 38, 0.7) 0%,
+        rgba(0, 37, 49, 0.1) 50%
+      ),
+      url("/img/about-bg-desktop-1x.jpg");
+  }
+
+  .about-layout {
+    display: grid;
+    grid-template-areas:
+      "title description ."
+      ". goal ."
+      "methods . subtitle";
+    grid-template-columns: 606px 292px auto;
+    column-gap: 24px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about-bg {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 24, 38, 0.7) 0%,
+          rgba(0, 37, 49, 0.1) 50%
+        ),
+        url("/img/about-bg-desktop-2x.jpg");
+    }
+  }
+}

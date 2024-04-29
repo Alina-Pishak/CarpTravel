@@ -8,7 +8,9 @@ type Props = {
 
 export default function Text({ children, extraProps, wordCount }: Props) {
   return wordCount ? (
-    <p className={`font-extralight text-sm w-45 ${extraProps}`}>
+    <p
+      className={`font-extralight text-sm w-45 md:text-base md:leading-[1.2] xl:text-lg xl:leading-[1.33] ${extraProps}`}
+    >
       <span className="font-normal">
         {chooseSomeWords(children, 0, wordCount)}&nbsp;
       </span>
@@ -16,7 +18,7 @@ export default function Text({ children, extraProps, wordCount }: Props) {
     </p>
   ) : (
     <p
-      className={`font-extralight text-sm w-45  sm:text-sm leading-[1.2] ${extraProps}`}
+      className={`font-extralight text-sm w-45 md:text-base md:leading-[1.2] xl:text-lg xl:leading-[1.33] ${extraProps}`}
     >
       {children}
     </p>
