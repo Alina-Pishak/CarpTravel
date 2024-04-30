@@ -16,7 +16,7 @@ import "swiper/css";
 import "./Gallery.css";
 
 export default function Gallery() {
-  const swiperRef = useRef();
+  const swiperRef = useRef<any>();
   return (
     <section id="gallery" className="gallery-bg relative">
       <BgContainer bg="bg-bgPrimary xl:bg-bgPrimaryDark">
@@ -32,7 +32,6 @@ export default function Gallery() {
               alt={alt}
               width={280}
               height={187}
-              атрибут
               loading="lazy"
             />
           </picture>

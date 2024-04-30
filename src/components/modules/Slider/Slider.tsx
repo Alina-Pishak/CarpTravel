@@ -33,7 +33,7 @@ type Props = {
 };
 
 export default function Slider({ title, data }: Props) {
-  const swiperRef = useRef();
+  const swiperRef = useRef<any>();
   return (
     <Swiper
       slidesPerView={1}
