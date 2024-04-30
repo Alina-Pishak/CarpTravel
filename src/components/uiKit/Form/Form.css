@@ -18,13 +18,6 @@
   content: url("/img/checkbox-checked.svg");
 }
 
-.placeholder-custom::before {
-  content: "+ 38";
-  position: absolute;
-  bottom: 33%;
-  left: 8px;
-}
-
 .error-icon::before {
   content: url("/img/icon-cross.svg");
   width: 18px;

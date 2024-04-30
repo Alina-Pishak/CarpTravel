@@ -100,9 +100,6 @@ export default function Form({ formProps, schema }: Props) {
               )}
             </div>
           )}
-          {name === "phone" && (
-            <p className="placeholder-custom font-extralight text-[13px] leading-[1.85] xl:text-xl xl:leading-[1.2]"></p>
-          )}
         </div>
       ))}
       {formProps.confirmText && (
