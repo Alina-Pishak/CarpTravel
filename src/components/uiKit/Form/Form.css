@@ -11,7 +11,7 @@
 }
 
 .not-checked:hover::after {
-  content: url("/img/checkbox-checked.svg");
+  content: url("/img/checkbox.svg");
 }
 
 .checked::after {

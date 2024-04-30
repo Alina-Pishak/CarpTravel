@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -29,22 +29,19 @@ export default function Form({ formProps, schema }: Props) {
     handleSubmit,
     formState: { errors },
     reset,
+    setValue,
   } = useForm({
     resolver: yupResolver(schema),
+    defaultValues: { phone: "+ 38" },
   });
   const onSubmit = (data: typeof schema) => {
     if (!formProps.confirmText) {
       toast.success("Your data sent successfully");
       localStorage.setItem("contacts", JSON.stringify(data));
       reset();
-    } else if (formProps.confirmText && checked) {
-      toast.success("Your data sent successfully");
-      localStorage.setItem("career", JSON.stringify(data));
-      reset();
-    } else if (formProps.confirmText && !checked) {
-      toast.error("You need to allow us processing your data");
     }
   };
+
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
@@ -72,7 +69,7 @@ export default function Form({ formProps, schema }: Props) {
               autoComplete="off"
               {...register(name)}
               className={clsx(
-                " font-extralight text-[13px] leading-[1.85] px-2 w-full bg-bgInputs placeholder:opacity-20 transition-colors hover:bg-bgHoverInputs focus:bg-bgHoverInputs xl:text-xl xl:leading-[1.2]",
+                " font-extralight text-[13px] leading-[1.85] px-2 w-full bg-bgInputs placeholder:opacity-20 transition-colors hover:bg-bgHoverInputs focus:bg-bgHoverInputs xl:text-xl xl:leading-[1.2] placeholder:before:text-xl",
 
                 errors[name] && "text-error opacity-100"
               )}
@@ -81,7 +78,7 @@ export default function Form({ formProps, schema }: Props) {
             <textarea
               id={name}
               {...register(name)}
-              className=" font-extralight text-[13px] leading-[1.8] px-2 w-full bg-bgInputs resize-none	mb-4 placeholder:opacity-20 h-[196px] transition-colors hover:bg-bgHoverInputs focus:bg-bgHoverInputs md:h-[228px] xl:text-xl xl:leading-[1.2] xl:h-[268px]"
+              className=" font-extralight text-[13px] leading-[1.85] px-2 w-full bg-bgInputs resize-none	mb-4 placeholder:opacity-20 h-[196px] transition-colors hover:bg-bgHoverInputs focus:bg-bgHoverInputs md:h-[228px] xl:text-xl xl:leading-[1.2] xl:h-[268px]"
             />
           )}
           {name !== "message" && (

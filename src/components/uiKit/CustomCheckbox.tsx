@@ -7,9 +7,9 @@ type Props = {
 
 export default function CustomCheckbox({ checked, setChecked }: Props) {
   return (
-    <button
+    <div
       onClick={() => setChecked(!checked)}
       className={clsx("custom-checkbox", checked ? "checked" : "not-checked")}
-    ></button>
+    ></div>
   );
 }
