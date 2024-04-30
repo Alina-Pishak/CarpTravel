@@ -46,32 +46,14 @@ textarea:focus {
 }
 
 .basic-container {
-  /* max-width: 440px; */
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
-/* 
-  heroMobile:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/hero-bg-mobile-1x.jpg')",
-        heroDesktop:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/hero-bg-1x.jpg')",
-        aboutMobile:
-         
-        aboutMobileSmall: "url('/img/about-bg-mobile-320px-1x.jpg')",
-        slider:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/slider-bg-1-mobile-1x.jpg')",
-        careerMobile:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/career-mobile-1x.jpg')",
-        galleryMobile:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/gallery-bg-mobile-1x.jpg')",
-        contactsMobile:
-          "linear-gradient(180deg, rgba(0,24,38,0.7) 0%, rgba(0,37,49,0.1) 50%), url('/img/contacts-bg-mobile-1x.jpg')", */
 
 @media screen and (min-width: 768px) {
   .basic-container {
-    /* max-width: 768px; */
     padding-left: 32px;
     padding-right: 32px;
   }

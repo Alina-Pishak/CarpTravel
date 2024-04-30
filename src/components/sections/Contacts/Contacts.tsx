@@ -14,7 +14,7 @@ export default function Contacts() {
   const { title, contactsInfo, contactFormProps } = contacts;
   return (
     <section id="contacts" className="contacts-bg ">
-      <BgContainer>
+      <BgContainer bg="bg-bgPrimary">
         <Title extraProps="mb-9 xl:mb-[71px]">{title}</Title>
         <div className="block: xl:flex xl:gap-[230px] xl:justify-end">
           <ul className="contacts-layout justify-items-center md:mb-16	">
@@ -31,6 +31,8 @@ export default function Contacts() {
                     <li key={index}>
                       <a
                         href={link}
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
                         className="font-normal leading-[1.7] text-sm md:text-base md:text-right md:leading-[1.5] xl:text-lg xl:leading-[1.33] decoration-transparent transition-colors duration-300 hover:underline hover:decoration-primary "
                       >
                         {name}

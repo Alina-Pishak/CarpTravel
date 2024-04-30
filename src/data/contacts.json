@@ -4,21 +4,32 @@
     {
       "title": "Phone number",
       "text": [
-        { "name": "+38 (098) 12 34 567", "link": "" },
-        { "name": "+38 (073) 12 34 567", "link": "" }
+        { "name": "+38 (098) 12 34 567", "link": "tel:+38 (098) 12 34 567" },
+        { "name": "+38 (073) 12 34 567", "link": "tel:+38 (073) 12 34 567" }
       ]
     },
     {
       "title": "E-mail",
-      "text": [{ "name": "support@carptravel.com", "link": "" }]
+      "text": [
+        {
+          "name": "support@carptravel.com",
+          "link": "mailto:support@carptravel.com"
+        }
+      ]
     },
     {
       "title": "Follow us",
       "text": [
-        { "name": "facebook", "link": "" },
-        { "name": "instagram", "link": "" },
-        { "name": "youtube", "link": "" },
-        { "name": "tiktok", "link": "" }
+        {
+          "name": "facebook",
+          "link": "https://www.facebook.com/?locale=uk_UA"
+        },
+        { "name": "instagram", "link": "https://www.instagram.com/" },
+        { "name": "youtube", "link": "https://www.youtube.com/" },
+        {
+          "name": "tiktok",
+          "link": "https://www.tiktok.com/explore?lang=uk-UA"
+        }
       ]
     }
   ],

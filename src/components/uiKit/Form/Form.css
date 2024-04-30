@@ -18,6 +18,19 @@
   content: url("/img/checkbox-checked.svg");
 }
 
+.placeholder-custom::before {
+  content: "+ 38";
+  position: absolute;
+  bottom: 33%;
+  left: 8px;
+}
+
+.error-icon::before {
+  content: url("/img/icon-cross.svg");
+  width: 18px;
+  height: 18px;
+}
+
 @media screen and (min-width: 768px) {
   .form-layout {
     display: grid;

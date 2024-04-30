@@ -10,7 +10,7 @@ export default function About() {
   const { title, description, goal, subtitle, opportunity, methods } = about;
   return (
     <section id="about" className="about-bg">
-      <BgContainer>
+      <BgContainer bg="bg-bgPrimaryLight">
         <div className="about-layout">
           <Title extraProps="mb-2 about-title">{title}</Title>
           <Text

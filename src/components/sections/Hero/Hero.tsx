@@ -16,7 +16,7 @@ export default function Hero() {
   } = hero;
   return (
     <section id="hero" className="hero-bg ">
-      <div className="basic-container pt-[105px] pb-14 bg-bgPrimary md:flex md:gap-12 md:pt-[121px] xl:gap-[281px] xl:pt-[130px]">
+      <div className="basic-container pt-[105px] pb-14 bg-bgPrimaryLight md:flex md:gap-12 md:pt-[121px] xl:gap-[281px] xl:pt-[130px]">
         <p className="first-letter:font-medium font-thin text-4xl tracking-[0.04em] text-right md:text-6xl md:tracking-[0.13em] md:text-left md:hidden">
           {opportunityTitle}
         </p>
@@ -24,7 +24,7 @@ export default function Hero() {
           {opportunitySubTitle}
         </p>
         <div>
-          <h1 className=" font-thin text-l uppercase tracking-1 mb-6 md:text-6xl md:mb-[68px] xl:text-8xl xl:mb-[148px]">
+          <h1 className=" font-thin text-l uppercase tracking-1 mb-6 md:text-6xl md:mb-[68px] xl:text-8xl xl:leading-[1.2] xl:mb-[148px]">
             <p className="font-medium">{title.split(" ")[0]}</p>
             {title
               .split(" ")
@@ -44,7 +44,7 @@ export default function Hero() {
               {opportunitySubTitle}
             </p>
           </div>
-          <Text extraProps=" text-justify mb-6 md:mb-7 md:w-[230px]  xl:w-[294px] ">
+          <Text extraProps="w-full text-justify mb-6 md:mb-7 md:w-[230px]  xl:w-[294px] ">
             {text}
           </Text>
           <HeroButton>{buttonText}</HeroButton>
@@ -52,21 +52,4 @@ export default function Hero() {
       </div>
     </section>
   );
-}
-
-{
-  /* <svg
-          className="absolute top-0 left-0 fill-primary"
-          width={42}
-          height={53}
-        >
-          <use href="/img/symbol-defs.svg#icon-left-btn-frame"></use>
-        </svg>{" "}
-        <svg
-          className="absolute top-0 right-0 fill-primary"
-          width={42}
-          height={53}
-        >
-          <use href="/img/symbol-defs.svg#icon-right-btn-frame"></use>
-        </svg> */
 }

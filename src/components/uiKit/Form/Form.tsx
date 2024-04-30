@@ -54,11 +54,11 @@ export default function Form({ formProps, schema }: Props) {
       )}
     >
       {props.map(({ label, placeholder, name }, index) => (
-        <div key={index} className={`form-${name}`}>
+        <div key={index} className={`form-${name} relative`}>
           <label
             htmlFor={name}
             className={clsx(
-              "text-xs leading-loose tracking-2 font-extralight mb-1 block ",
+              "text-xs leading-loose tracking-2 font-extralight block ",
               errors[name] && "text-error"
             )}
           >
@@ -85,18 +85,21 @@ export default function Form({ formProps, schema }: Props) {
             />
           )}
           {name !== "message" && (
-            <div className="flex gap-1 justify-end items-center h-6 ">
+            <div
+              className={clsx(
+                "flex gap-1 justify-end items-center h-6 ",
+                formProps.confirmText && "h-4"
+              )}
+            >
               {errors[name] && (
-                <>
-                  <svg width={18} height={18} className="stroke-error">
-                    <use href="/img/symbol-defs.svg#icon-cross"></use>
-                  </svg>
-                  <p className="font-extralight text-xs leading-loose tracking-2 text-error">
-                    Incorrect {name}
-                  </p>
-                </>
+                <p className="font-extralight text-xs leading-loose tracking-2 text-error error-icon flex gap-1 items-center">
+                  Incorrect {name}
+                </p>
               )}
             </div>
+          )}
+          {name === "phone" && (
+            <p className="placeholder-custom font-extralight text-[13px] leading-[1.85] xl:text-xl xl:leading-[1.2]"></p>
           )}
         </div>
       ))}

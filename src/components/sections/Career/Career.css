@@ -36,7 +36,8 @@
     display: grid;
     grid-template-areas:
       "title title text"
-      "subtitle calltext . "
+      "subtitle . . "
+      "list calltext ."
       "list form form";
     grid-auto-columns: 225px 222px 222px;
     column-gap: 20px;
@@ -92,6 +93,10 @@
   }
 
   .career-layout {
+    grid-template-areas:
+      "title title text"
+      "subtitle calltext . "
+      "list form form";
     grid-auto-columns: 607px 330px 290px;
     column-gap: 24px;
   }

@@ -2,17 +2,17 @@
   "title": "OUR GALLERY",
   "images": [
     {
-      "alt": "gallery photo 1 breathtaking view of the lake and high carpathian mountains",
+      "alt": " breathtaking view of the lake and high carpathian mountains",
       "imgMobile": "/img/gallery-collection-1-mobile-1x.jpg 1x,/img/gallery-collection-1-mobile-2x.jpg 2x",
       "imgDesktop": "/img/gallery-collection-1-desktop-1x.jpg 1x, /img/gallery-collection-1-desktop-2x.jpg 2x"
     },
     {
-      "alt": "gallery photo 2 beautiful view of the path leading to the house in the forest",
+      "alt": " beautiful view of the path leading to the house in the forest",
       "imgMobile": "/img/gallery-collection-2-mobile-1x.jpg 1x,/img/gallery-collection-2-mobile-2x.jpg 2x",
       "imgDesktop": "/img/gallery-collection-2-desktop-1x.jpg 1x,/img/gallery-collection-2-desktop-2x.jpg 2x"
     },
     {
-      "alt": "gallery photo 3 high angle shot of the beautiful mountainous landscape with hills and cloudy sky",
+      "alt": " high angle shot of the beautiful mountainous landscape with hills and cloudy sky",
       "imgMobile": "/img/gallery-collection-3-mobile-1x.jpg 1x,/img/gallery-collection-3-mobile-2x.jpg 2x",
       "imgDesktop": "/img/gallery-collection-3-desktop-1x.jpg 1x,/img/gallery-collection-3-desktop-2x.jpg 2x"
     }
