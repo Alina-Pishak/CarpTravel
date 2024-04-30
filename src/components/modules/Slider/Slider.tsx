@@ -1,9 +1,8 @@
-//@ts-nocheck
 "use client";
 
 import { useRef } from "react";
 
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectFade } from "swiper/modules";
 
 import clsx from "clsx";

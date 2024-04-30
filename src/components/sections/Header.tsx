@@ -45,7 +45,7 @@ export default function Header() {
         className={clsx(
           !open && "sr-only translate-x-[500px] translate-y-0",
           open &&
-            "basic-container has-[body]:overflow-hidden w-full h-screen absolute z-50 left-0 backdrop-blur-xl bg-bgMobileMenu pt-[46px] translate-x-0 translate-y-0 transition-transform duration-300"
+            "basic-container w-full h-screen fixed z-50 left-0 backdrop-blur-xl bg-bgMobileMenu pt-[46px] translate-x-0 translate-y-0 transition-transform duration-300"
         )}
       >
         <HeaderButton open={open} setOpen={setOpen}>
