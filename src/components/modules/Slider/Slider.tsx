@@ -38,6 +38,7 @@ export default function Slider({ title, data }: Props) {
     <Swiper
       slidesPerView={1}
       loop={true}
+      effect="fade"
       modules={[Pagination, EffectFade]}
       onSwiper={(swiper) => {
         swiperRef.current = swiper;
