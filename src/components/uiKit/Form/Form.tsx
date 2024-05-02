@@ -56,34 +56,31 @@ export default function Form({ formProps, schema }: Props) {
       {props.map(({ label, placeholder, name }, index) => (
         <div key={index} className={`form-${name} relative`}>
           <label
-            htmlFor={name}
             className={clsx(
               "text-xs leading-loose tracking-2 font-extralight block ",
               errors[name] && "text-error"
             )}
           >
             {label}
+
+            {name !== "message" ? (
+              <input
+                placeholder={placeholder}
+                autoComplete="off"
+                {...register(name)}
+                className={clsx(
+                  " font-extralight text-[13px] leading-[1.85] px-2 w-full bg-bgInputs placeholder:opacity-20 transition-colors hover:bg-bgHoverInputs focus:bg-bgHoverInputs xl:text-xl xl:leading-[1.2]",
+
+                  errors[name] && "text-error opacity-100"
+                )}
+              />
+            ) : (
+              <textarea
+                {...register(name)}
+                className=" font-extralight text-[13px] leading-[1.8] px-2 w-full bg-bgInputs resize-none	mb-4 placeholder:opacity-20 h-[196px] transition-colors hover:bg-bgHoverInputs focus:bg-bgHoverInputs md:h-[228px] xl:text-xl xl:leading-[1.2] xl:h-[268px]"
+              />
+            )}
           </label>
-
-          {name !== "message" ? (
-            <input
-              id={name}
-              placeholder={placeholder}
-              autoComplete="off"
-              {...register(name)}
-              className={clsx(
-                " font-extralight text-[13px] leading-[1.85] px-2 w-full bg-bgInputs placeholder:opacity-20 transition-colors hover:bg-bgHoverInputs focus:bg-bgHoverInputs xl:text-xl xl:leading-[1.2]",
-
-                errors[name] && "text-error opacity-100"
-              )}
-            />
-          ) : (
-            <textarea
-              id={name}
-              {...register(name)}
-              className=" font-extralight text-[13px] leading-[1.8] px-2 w-full bg-bgInputs resize-none	mb-4 placeholder:opacity-20 h-[196px] transition-colors hover:bg-bgHoverInputs focus:bg-bgHoverInputs md:h-[228px] xl:text-xl xl:leading-[1.2] xl:h-[268px]"
-            />
-          )}
           {name !== "message" && (
             <div
               className={clsx(
@@ -118,7 +115,7 @@ export default function Form({ formProps, schema }: Props) {
       )}
       <button
         type="submit"
-        className="bg-none font-medium text-3xl text-inherit uppercase block ml-auto form-button"
+        className="bg-none font-medium text-3xl text-inherit uppercase block ml-auto form-button cursor-pointer"
       >
         {buttonText}
       </button>

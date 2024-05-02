@@ -38,6 +38,8 @@ export default function Gallery() {
         ))}
         <div className="hidden md:block ">
           <Swiper
+            loop={true}
+            // slidesPerGroup={3}
             spaceBetween={24}
             slidesPerView={3}
             centeredSlides={true}

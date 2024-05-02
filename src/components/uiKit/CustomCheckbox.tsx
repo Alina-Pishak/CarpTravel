@@ -9,7 +9,7 @@ export default function CustomCheckbox({ checked, setChecked }: Props) {
   return (
     <div
       onClick={() => setChecked(!checked)}
-      className={clsx("custom-checkbox", checked ? "checked" : "not-checked")}
+      className={clsx("custom-checkbox ", checked ? "checked" : "not-checked")}
     ></div>
   );
 }

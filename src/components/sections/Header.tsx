@@ -27,7 +27,7 @@ export default function Header() {
                     spy={true}
                     smooth={true}
                     duration={700}
-                    className="text-xs font-normal tracking-[0.1em] "
+                    className="text-xs font-normal tracking-[0.1em] cursor-pointer"
                   >
                     {item}
                   </Link>
@@ -59,9 +59,9 @@ export default function Header() {
                 spy={true}
                 smooth={true}
                 duration={700}
-                className="text-lg font-normal tracking-[0.1em] "
+                className="text-lg font-normal tracking-[0.1em] cursor-pointer"
                 onClick={() => {
-                  document.body.classList.remove("overflow-hidden");
+                  document.body.classList.remove("overflow-y-hidden");
                   setOpen(false);
                 }}
               >

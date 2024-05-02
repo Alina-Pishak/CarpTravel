@@ -14,7 +14,7 @@ export default function HeaderButton({ children, open, setOpen }: Props) {
   return (
     <button
       type="button"
-      className="md:hidden font-primary font-normal text-sm tracking-[0.1em] uppercase  block ml-auto"
+      className="md:hidden font-primary font-normal text-sm tracking-[0.1em] uppercase  block ml-auto cursor-pointer"
       onClick={toggleMenu}
     >
       {children}

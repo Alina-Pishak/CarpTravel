@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Logo() {
   return (
-    <Link href="http://localhost:3000/" className="flex ">
+    <Link href="https://carp-travel-murex.vercel.app/" className="flex ">
       <div className="flex flex-col ">
         <div className="lg:hidden">
           <Image

@@ -33,7 +33,7 @@ export default function Contacts() {
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer nofollow"
-                        className="font-normal leading-[1.7] text-sm md:text-base md:text-right md:leading-[1.5] xl:text-lg xl:leading-[1.33] decoration-transparent transition-colors duration-300 hover:underline hover:decoration-primary "
+                        className="font-normal leading-[1.7] cursor-pointer text-sm md:text-base md:text-right md:leading-[1.5] xl:text-lg xl:leading-[1.33] decoration-transparent transition-colors duration-300 hover:underline hover:decoration-primary  focus:underline focus:decoration-primary"
                       >
                         {name}
                       </a>

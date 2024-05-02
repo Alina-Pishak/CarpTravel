@@ -25,7 +25,7 @@ export default function Hero() {
         </p>
         <div>
           <h1 className=" font-thin text-l uppercase tracking-1 mb-6 md:text-6xl md:mb-[68px] xl:text-8xl xl:leading-[1.2] xl:mb-[148px]">
-            <p className="font-medium">{title.split(" ")[0]}</p>
+            <span className="block font-medium">{title.split(" ")[0]}</span>
             {title
               .split(" ")
               .slice(1, title.length - 1)

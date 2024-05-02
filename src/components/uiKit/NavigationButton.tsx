@@ -8,7 +8,7 @@ export default function NavigationButton({ children, onClick }: Props) {
     <button
       type="button"
       onClick={onClick}
-      className="font-thin text-[33px] leading-none"
+      className="font-thin text-[33px] leading-none cursor-pointer"
     >
       {children}
     </button>

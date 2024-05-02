@@ -27,9 +27,9 @@ export default function About() {
           </Text>
           <div className="mb-10 ml-auto w-45 md:row-start-2 md:col-start-1 md:mb-16 md:w-50 md:m-0 md:mt-auto about-subtitle xl:w-[296px]">
             <h4 className="font-normal text-sm uppercase text-right md:text-base md:leading-[1.2] xl:text-lg xl:leading-[1.33]">
-              <p className="text-left">
+              <span className="block text-left">
                 {subtitle.slice(0, subtitle.indexOf("to"))}
-              </p>
+              </span>
               {subtitle.slice(subtitle.indexOf("to"), subtitle.length - 1)}
             </h4>
             <Text extraProps=" md:w-50 xl:w-[297px] xl:tracking-[0.12em]">

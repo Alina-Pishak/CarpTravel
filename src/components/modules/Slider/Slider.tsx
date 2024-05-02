@@ -46,11 +46,7 @@ export default function Slider({ title, data }: Props) {
     >
       {data.map(
         ({ number, action, image, background, text, titles }, index) => (
-          <SwiperSlide
-            key={index}
-            id="swiperSlide"
-            className={`${background} bg-cover `}
-          >
+          <SwiperSlide key={index} className={`${background} bg-cover `}>
             <BgContainer bg="bg-bgPrimaryLight">
               <div className="services-layout">
                 <div className=" custom-pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal "></div>
@@ -78,7 +74,7 @@ export default function Slider({ title, data }: Props) {
                     <li key={i} className="mb-4 last:mb-0">
                       <p
                         className={clsx(
-                          "font-extralight text-xl uppercase w-45 leading-none flex items-center gap-2 md:text-[22px] md:leading-[0.8] md:w-50 xl:text-[28px] xl:w-[253px] cursor-pointer opacity-75 transition-opacity hover:opacity-100 ",
+                          "font-extralight text-xl uppercase w-45 leading-none flex items-center gap-2 md:text-[22px] md:leading-[0.8] md:w-50 xl:text-[28px] xl:w-[253px] cursor-pointer opacity-75 transition-opacity hover:opacity-100 focus:opacity-100",
                           i === index &&
                             "font-medium w-48 before:block before:w-[6px] before:h-[6px] before:bg-primary before:rotate-45 opacity-[1]"
                         )}
