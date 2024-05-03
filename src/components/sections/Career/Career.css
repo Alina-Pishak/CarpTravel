@@ -97,7 +97,7 @@
       "title title text"
       "subtitle calltext . "
       "list form form";
-    grid-auto-columns: 607px 330px 290px;
+    grid-auto-columns: auto;
     column-gap: 24px;
   }
 

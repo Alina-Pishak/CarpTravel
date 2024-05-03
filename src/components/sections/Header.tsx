@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="basic-container pt-9  w-full  absolute left-0 md:pt-6">
+      <header className="basic-container pt-9  w-full  absolute left-0 right-0 md:pt-6">
         <div className="flex justify-between items-center md:block">
           <nav className="md:flex md:justify-between md:items-center">
             <Logo />

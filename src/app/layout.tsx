@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   description:
     "We are fully committed to the mission of creating unforgettable and extraordinary trips to the most beautiful parts of the Carpathians. Our goal is not just to show you the natural wonders of the mountains, but to provide you with a deep immersion in their magical atmosphere.",
   icons: "/favicon.png",
+  openGraph: {
+    title: "Carp Travel",
+    description:
+      "We are fully committed to the mission of creating unforgettable and extraordinary trips to the most beautiful parts of the Carpathians. Our goal is not just to show you the natural wonders of the mountains, but to provide you with a deep immersion in their magical atmosphere.",
+    images: ["/img/og-image.png"],
+    url: "https://carp-travel-murex.vercel.app/",
+  },
 };
 
 const inter = Inter({

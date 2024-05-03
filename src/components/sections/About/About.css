@@ -115,8 +115,8 @@
       "title description ."
       ". goal ."
       "methods . subtitle";
-    grid-template-columns: 606px 292px auto;
-    column-gap: 24px;
+    grid-template-columns: auto;
+    column-gap: 0;
   }
 
   @media (min-device-pixel-ratio: 2),
