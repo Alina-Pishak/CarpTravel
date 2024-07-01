@@ -1,34 +1,17 @@
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="/favicon.png" alt="Logo" width="80" height="80">
+  <a href="https://carp-travel-murex.vercel.app/">
+    <img src="/public/img/og-image.png" alt="Og image">
   </a>
+</div>
+  
+## Carp Travel
 
-  <h3 align="center">Carp Travel</h3>
 
-<!-- ABOUT THE PROJECT -->
+Welcome to website, crafted with the latest technologies to provide you with a seamless and engaging experience. Our website utilizes the powerful combination of Next.js, Tailwind CSS, TypeScript, to deliver high performance, flexibility, and a visually appealing interface.
 
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [![Next][Next.js]][Next-url]
+[Link](https://www.figma.com/design/2nHaXyrwQxqXLYmPUGQuP1/CarpTravel---%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B5-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F?node-id=348-14&t=GwE4VOXfkVPkMbum-1)
+to design layout
 
 ## How To Use
 
@@ -50,3 +33,59 @@ $ npm run dev
 
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+
+## Technologies
+
+  <ul>
+        <li>
+          <a
+            href="https://nextjs.org/"
+          >
+            <img
+              src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"
+              alt="Next"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.typescriptlang.org/"
+          >
+            <img
+              src="https://img.shields.io/badge/TypeScript-black?style=for-the-badge&logo=typescript"
+              alt="TypeScript"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://tailwindcss.com/"
+          >
+            <img
+              src="https://img.shields.io/badge/tailwind-black?style=for-the-badge&logo=tailwindcss"
+              alt="Tailwind CSS"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://react-hook-form.com/"
+          >
+            <img
+              src="https://img.shields.io/badge/react_hook_form-black?style=for-the-badge&logo=react%20hook%20form"
+              alt="React hook form"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://swiperjs.com/"
+          >
+            <img
+              src="https://img.shields.io/badge/swiper-black?style=for-the-badge&logo=swiper&logoColor=blue"
+              alt="Swiper"
+            />
+          </a>
+        </li>
+      </ul>
+
