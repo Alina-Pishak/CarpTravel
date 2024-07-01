@@ -4,7 +4,6 @@ import { useRef } from "react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import clsx from "clsx";
 
 import BgContainer from "@/components/uiKit/BgContainer";
 import Title from "@/components/uiKit/Title";
@@ -32,41 +31,35 @@ export default function Gallery() {
               className=" block mb-6 shadow-image ml-auto mr-auto md:hidden"
             />
           ))}
-          <div className="hidden md:block ">
+          <div className="hidden md:relative md:block md:ml-auto md:mr-auto">
             <Swiper
               loop={true}
               spaceBetween={24}
-              slidesPerView={3}
+              slidesPerView={1}
               centeredSlides={true}
-              className="w-auto"
+              className="md:w-[415px] md:h-[294px] xl:w-[606px] xl:h-[429px]"
               onSwiper={(swiper) => (swiperRef.current = swiper)}
             >
               {gallery.images.map(({ alt, imgDesktop }, index) => (
-                <SwiperSlide key={index} className="slide-custom-">
-                  {({ isActive }) => (
-                    <Image
-                      alt={alt}
-                      src={imgDesktop}
-                      key={index}
-                      width={280}
-                      height={187}
-                      className={clsx(
-                        isActive && "custom-slide-active ",
-                        "slide-custom"
-                      )}
-                    />
-                  )}
+                <SwiperSlide key={index}>
+                  <Image
+                    alt={alt}
+                    src={imgDesktop}
+                    key={index}
+                    width={280}
+                    height={187}
+                  />
                 </SwiperSlide>
               ))}
-              <div className="hidden md:flex md:gap-[461px]  md:justify-evenly md:absolute md:z-50 md:bottom-[17px] md:right-0 md:left-0 xl:bottom-0">
-                <NavigationButton onClick={() => swiperRef.current.slidePrev()}>
-                  BACK
-                </NavigationButton>
-                <NavigationButton onClick={() => swiperRef.current.slideNext()}>
-                  NEXT
-                </NavigationButton>
-              </div>
             </Swiper>
+            <div className="hidden md:flex md:gap-[461px] md:justify-evenly md:absolute md:z-50 md:bottom-[17px] md:right-0 md:left-0   xl:gap-[500px] xl:bottom-0">
+              <NavigationButton onClick={() => swiperRef.current.slidePrev()}>
+                BACK
+              </NavigationButton>
+              <NavigationButton onClick={() => swiperRef.current.slideNext()}>
+                NEXT
+              </NavigationButton>
+            </div>
           </div>
         </BgContainer>
       </div>
