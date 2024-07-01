@@ -63,7 +63,7 @@ textarea:focus {
 @media screen and (min-width: 1280px) {
   .basic-container {
     min-width: 1280px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
